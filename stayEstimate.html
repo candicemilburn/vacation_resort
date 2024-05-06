@@ -36,7 +36,7 @@
 
         <h1>Estimate Your Stay!</h1>
 
-        <form>
+        <form id="estimateForm">
             <div class="mb-3">
                 <label for="fullName"> Your name: </label>
                 <input type="text" name="fullName" id="fullName" required>
@@ -68,8 +68,11 @@
             </div>
             <div class="mb-3">
                 <label for="numOfKids"> Number of Children: </label>
-                <input type="number" name="NumOfKids" id="NumOfKids" value="0" required min="1" max="4">
+                <input type="number" name="NumOfKids" id="NumOfKids" value="0" required min="0  " max="4">
                 </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-dark" id="submitButton">Get Quote</button>
         </form>
 
     </section>
