@@ -42,12 +42,16 @@
                 <input type="text" name="fullName" id="fullName" required>
             </div>
             <div class="mb-3">
+                <label for="email"> E-mail: </label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
                 <label for="checkInDate"> Check-In Date: </label>
                 <input type="date" name="checkInDate" id="checkInDate" required>
             </div>
             <div class="mb-3">
                 <label for="numOfNights"> Number of Nights: </label>
-                <input type="number" name="numOfNights" id="numOfNights" required min="1" max="30">
+                <input type="number" name="numOfNights" id="numOfNights" required min="1" max="28">
             </div>
 
             <div class="mb-3">
@@ -56,10 +60,8 @@
                 <label for="queen">Queen</label>
                 <input type="radio" name="roomType" id="king" value="king" checked>
                 <label for="king">King</label>
-                <input type="radio" name="roomType" id="double" value="double" checked>
-                <label for="double">Double Bed</label>
-                <input type="radio" name="roomType" id="suite" value="suite" checked>
-                <label for="suite">Deluxe Suite</label>
+               <input type="radio" name="roomType" id="suite" value="suite" checked>
+                <label for="suite">2-Bed Suite</label>
             </div>
 
             <div class="mb-3">
@@ -68,14 +70,27 @@
             </div>
             <div class="mb-3">
                 <label for="numOfKids"> Number of Children: </label>
-                <input type="number" name="NumOfKids" id="NumOfKids" value="0" required min="0  " max="4">
-                </div>
+                <input type="number" name="numOfKids" id="numOfKids" value="0" required min="0" max="4">
+            </div>
+
+            <div class="mb-3">
+                <h4>Apply Discount: </h4>
+                <input type="radio" name="specialDiscount" id="military" value="military" >
+                <label for="military">Military (20%)</label>
+                <input type="radio" name="specialDiscount" id="aAA" value="aAA" >
+                <label for="aAA">AAA/Senior (10%)</label>
+                <input type="radio" name="specialDiscount" id="None" value="None" checked>
+                <label for="Nonw">None</label>
+            </div>
+
 
                 <div class="mb-3">
-                    <button class="btn btn-dark" id="submitButton">Get Quote</button>
+                    <button class="btn btn-dark" id="submitButton">Get Quote</button> </div>
         </form>
-
+        <div id="roomRate"></div>
+      
     </section>
+  <div></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
